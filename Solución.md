@@ -26,7 +26,7 @@ Dentro del código, vemos lo siguiente:
 
 En la imagen vemos que para la comparación que determina si entramos a la función `boom` o no después de escribir la contraseña se usa la función `compare`. Por ello, la buscamos en el código para ver cómo trabaja.
 <p align="center">
-  <img src="Teminal_1.png" />
+  <img src="Terminal_1.png" />
 </p>
 
 Como vemos en el código, la función `compare` compara nuestra entrada con el resultado de la llamar a la función `encrypt_decrypt` con el párametro passwd. Por lo que `passwd` seguramente será nuestra contraseña encriptada, y la función `encrypt_decrypt` la descifra para la comparación.
