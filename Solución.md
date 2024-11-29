@@ -15,10 +15,11 @@ gdb ./2024_PDM
 
 Una vez dentro de `gdb`, se debe mostrar el lenguaje ensamblador y el contenido de los registros por lo que escribimos:
 ```console
-layout asm
-layout regs
+(gdb) layout asm
+(gdb) layout regs
 ```
 
+*Fase 1. Contraseña* 
 Dentro del código, vemos lo siguiente:
 <p align="center">
   <img src="Teminal.png" />
@@ -39,3 +40,26 @@ void encrypt_decrypt(char cad[]) {
 }
 ```
 
+Ahora que sabemos cómo está codificada la contraseña, consultamos el contenido de la contraseña encriptada (y la llave usada en su encriptación) y la desecncriptamos. El caso de la puerta xor es muy conveniente, ya que el mismo algoritmo que nos permite encriptar nos permite desencriptar.
+```console
+(gdb) x/s 0x4040a0
+0x4040a0 <passwd>:  "\037\030\016\022\004\032\026\005\003\022\004}"
+(gdb) x/d 0x404050
+0x404050 <key>:  119
+```
+
+Hacemos un pequeño código en C para automitar el proceso de desencriptación:
+```c
+void encrypt_decrypt(char cad[]) {
+    int cad_length = strlen(cad);
+    for (int i = 0; i < cad_length; ++i) cad[i] = cad[i] ^ 119;
+}
+
+int main() {
+    char cad[] = "\037\030\016\022\004\032\026\005\003\022\004}";
+    encrypt_decrypt(cad);
+    printf(cad);
+}
+```
+
+Esto nos da como resultado que nuestra contraseña es "hoyesmartes\n"
