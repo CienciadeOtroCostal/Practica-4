@@ -20,9 +20,8 @@ layout regs
 ```
 
 Dentro del código, vemos lo siguiente:
-<img src="Terminal.png" 
-        alt="Código ensamblador inicial" 
-        width="800" 
-        height="600" 
-        style="display: block; margin: 0 auto" />
+<p align="center">
+  <img src="Teminal.png" />
+</p>
+
 
