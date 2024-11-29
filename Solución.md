@@ -23,5 +23,7 @@ Dentro del código, vemos lo siguiente:
 <p align="center">
   <img src="Teminal.png" />
 </p>
-
-
+En la imagen vemos que para la comparación que determina si entramos a la función `boom` o no después de escribir la contraseña es la función `compare` con la función `encriptar`. Por ello, la buscamos en el código para ver cómo trabaja.
+<p align="center">
+  <img src="Teminal.png" />
+</p>
