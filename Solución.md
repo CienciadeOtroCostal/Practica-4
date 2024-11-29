@@ -20,4 +20,4 @@ layout regs
 ```
 
 Dentro del código, vemos lo siguiente:
-!(Teminal.png)
+![](Teminal.png)
