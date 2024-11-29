@@ -19,7 +19,8 @@ Una vez dentro de `gdb`, se debe mostrar el lenguaje ensamblador y el contenido 
 (gdb) layout regs
 ```
 
-*Fase 1. Contraseña* 
+**Fase 1. Contraseña** 
+
 Dentro del código, vemos lo siguiente:
 <p align="center">
   <img src="Teminal.png" />
@@ -64,4 +65,4 @@ int main() {
 
 Esto nos da como resultado que nuestra contraseña es "hoyesmartes\n"
 
-*Fase 2. PIN*
+**Fase 2. PIN**
