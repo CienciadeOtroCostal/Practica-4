@@ -2,7 +2,7 @@
 
 **Autor:** Pablo Díaz Madera
 - **Asignatura:** Estructura de Computadores.
-- **Curso Académico:** 2023-24.
+- **Curso Académico:** 2024-25.
 - **Grado:** Doble Grado en Ingeniería Informática y Matemáticas.
 - **Grupo:** Único.
 - **Profesor:** Ignacio Rojas Ruiz.
@@ -20,4 +20,4 @@ layout regs
 ```
 
 Dentro del código, vemos lo siguiente:
-![](Teminal.png)
+![Código ensamblador inicial](Terminal.png){ width="800" height="600" style="display: block; margin: 0 auto" }
