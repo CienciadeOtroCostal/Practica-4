@@ -63,3 +63,5 @@ int main() {
 ```
 
 Esto nos da como resultado que nuestra contraseña es "hoyesmartes\n"
+
+*Fase 2. PIN*
