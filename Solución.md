@@ -20,4 +20,9 @@ layout regs
 ```
 
 Dentro del código, vemos lo siguiente:
-![Código ensamblador inicial](Terminal.png){ width="800" height="600" style="display: block; margin: 0 auto" }
+<img src="Terminal.png" 
+        alt="Código ensamblador inicial" 
+        width="800" 
+        height="600" 
+        style="display: block; margin: 0 auto" />
+
