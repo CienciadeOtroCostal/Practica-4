@@ -66,3 +66,5 @@ int main() {
 Esto nos da como resultado que nuestra contraseña es "hoyesmartes\n"
 
 **Fase 2. PIN**
+
+Una vez descubierta la contraseña, volvemos a fijarnos en el main para trabajr en el PIN.
