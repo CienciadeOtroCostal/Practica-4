@@ -23,12 +23,12 @@ Una vez dentro de `gdb`, se debe mostrar el lenguaje ensamblador y el contenido 
 
 Dentro del código, vemos lo siguiente:
 <p align="center">
-  <img src="Teminal.png" />
+  <img src="Images/Teminal.png" />
 </p>
 
 En la imagen vemos que para la comparación que determina si entramos a la función `boom` o no después de escribir la contraseña se usa la función `compare`. Por ello, la buscamos en el código para ver cómo trabaja.
 <p align="center">
-  <img src="Terminal_1.png" />
+  <img src="Images/Terminal_1.png" />
 </p>
 
 Como vemos en el código, la función `compare` compara nuestra entrada con el resultado de la llamar a la función `encrypt_decrypt` con el párametro passwd. Por lo que `passwd` seguramente será nuestra contraseña encriptada, y la función `encrypt_decrypt` la descifra para la comparación.
@@ -63,8 +63,16 @@ int main() {
 }
 ```
 
-Esto nos da como resultado que nuestra contraseña es "hoyesmartes\n"
+Esto nos da como resultado que nuestra contraseña es `"hoyesmartes\n"`
 
 **Fase 2. PIN**
 
-Una vez descubierta la contraseña, volvemos a fijarnos en el main para trabajr en el PIN.
+Una vez descubierta la contraseña, volvemos a fijarnos en el `main` para trabajr en el PIN.
+<p align="center">
+  <img src="Images/Terminal_2.png" />
+</p>
+
+Como vemos en el `main` la llamada a la función `boom`depende del resultado de la comprobación de la función `check_pin`. Veamos cómo actúa esta función.
+<p align="center">
+  <img src="Images/Terminal_3.png" />
+</p>
