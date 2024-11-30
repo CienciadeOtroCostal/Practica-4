@@ -26,7 +26,7 @@ Dentro del código, vemos lo siguiente:
   <img src="Images/Teminal.png" />
 </p>
 
-En la imagen vemos que para la comparación que determina si entramos a la función `boom` o no después de escribir la contraseña se usa la función `compare`. Por ello, la buscamos en el código para ver cómo trabaja.
+En la imagen vemos que para la comparación que determina si entramos a la función `boom` o no, después de escribir la contraseña se usa la función `compare`. Por ello, la buscamos en el código para ver cómo trabaja.
 <p align="center">
   <img src="Images/Terminal_1.png" />
 </p>
@@ -49,7 +49,7 @@ Ahora que sabemos cómo está codificada la contraseña, consultamos el contenid
 0x404050 <key>:  119
 ```
 
-Hacemos un pequeño código en C para automitar el proceso de desencriptación:
+Hacemos un pequeño código en C para automatizar el proceso de desencriptación:
 ```c
 void encrypt_decrypt(char cad[]) {
     int cad_length = strlen(cad);
